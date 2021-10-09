@@ -1,0 +1,24 @@
+{
+  "name": "youchat",
+  "version": "1.0.0",
+  "description": "A web app used to chat safely.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CH3CHOHCH3/youchat.git"
+  },
+  "author": "CH3CHOHCH3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CH3CHOHCH3/youchat/issues"
+  },
+  "homepage": "https://github.com/CH3CHOHCH3/youchat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "md5": "^2.3.0",
+    "node-rsa": "^1.1.1"
+  }
+}

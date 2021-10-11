@@ -1,20 +1,20 @@
 .signup-form {
-    margin: 35vh auto 0;
+    margin: 15em auto;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.92);
-    width: 45vh;
-    padding: 5vh 1vh 5vh 1vh;
+    width: 25em;
+    padding: 1em;
     border-radius: 4px;
 }
 .signup-form input {
-    width: 35vh;
-    height: 5vh;
+    width: 20em;
+    height: 2.5em;
     color: #000;
     display: block;
     outline: 0;
-    margin: auto;
-    padding: 0 0 0 1vh;
-    font-size: 2vh;
+    margin: 1em auto;
+    padding: 0 0 0 1em;
+    font-size: 1em;
     line-height: normal;
     border: 1px solid #d6d9db;
     border-radius: 4px;
@@ -26,17 +26,42 @@
 
 .signup-form button {
     display: block;
-    margin: 2vh auto 0 auto;
-    width: 35vh;
-    height: 5vh;
+    margin: 1em auto 0 auto;
+    width: 20em;
+    height: 2.5em;
     border-radius: 20px;
     border-style: none;
-    padding: 0 0 0 1vh;
+    padding: 0 0 0 1em;
     color: #fff;
     background: #000;
     outline: none;
     font-weight: 700;
-    font-size: 2vh;
+    font-size: 1em;
     text-align: center;
     transition: background-color .2s;
+}
+
+.list-complete-item {
+    transition: all 0.8s ease;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+.showMd5-enter-from,
+.showMd5-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.showMd5-leave-active {
+    position: absolute;
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
 }

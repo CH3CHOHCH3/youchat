@@ -1,0 +1,16 @@
+.textarea{
+    background-color: #fff;
+    width: 50%;
+    min-height: 5em;
+    max-height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    outline: none;
+    border: 1px solid #d6d9db;
+    border-radius: 4px;
+    font-size: 1em;
+    line-height: 1em;
+    word-wrap: break-word;
+    overflow: hidden;
+}

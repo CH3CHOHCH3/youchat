@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0, user-scalable = no, target-densitydpi = device-dpi" />
 
-    
     <title>YouChat</title>
-    <script src="https://cdn.bootcss.com/jsencrypt/3.0.0-beta.1/jsencrypt.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src = "https://cdn.bootcss.com/jsencrypt/3.0.0-beta.1/jsencrypt.min.js"></script>
+    <script src = "https://unpkg.com/vue@next"></script>
 
-    <link rel="shortcut icon" href="/img/icon.svg">
-    <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/cli.js"></script>
+    <link rel = "shortcut icon" href = "/img/icon.svg">
+    <link rel = "stylesheet" href = "/css/main.css">
+    <script src = "/js/cli.js"></script>
 
 </head>
-<body style="background-color: #000;">
-    <div class="signup-form">
-        <div id="md5" style="margin: 1vh auto;font-size: 2vh;">md5:{{md5}}</div>
-        <input id = "key" placeholder="Please input the key.">
-        <button onclick="submitKey()">Submit</button>
+<body style = "background-color: #000;">
+    <div class = "signup-form">
+
+        <div id = "showMd5">
+            <transition name = "showMd5">
+                <p style = "font-size: 1em;margin: 1em auto;">md5:{{md5}}</p>
+            </transition>
+        </div>
+        <input id = "key" placeholder = "Please input the key.">
+        <input id = "username" placeholder = "Please input your username.">
+        <button onclick = "submitKey()" onkeydown="if(event.keyCode == 13)submitKey();">Submit</button>
     </div>
     <script>getPub();</script>
 </body>
